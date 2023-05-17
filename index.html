@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>var exports = {};</script>
+    <script src="src/app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vacances</h1>
+
+    <h2>Crear entrada:</h2>
+    <form id="form">
+        <div>
+            <label>Nom</label>
+            <input id="nom" type="text" />
+        </div>
+        <div>
+            <label>Preu</label>
+            <input id="preu" type="number" />
+        </div>
+        <div>
+            <label>Pais</label>
+            <input id="pais" type="text" />
+        </div>
+        <div>
+            <label>Descripció</label>
+            <textarea id="descripcio" type="text"></textarea>
+        </div>
+        <div>
+            <button type="button" onclick="crear()">Crear</button>
+        </div>
+    </form>
+
+    <h1>Llistat</h1>
+    <ul id="llistat">
+    </ul>
+
+
+    <h1>Detalls</h1>
+    <div id="detalls"></div>
+
+</body>
+</html>
